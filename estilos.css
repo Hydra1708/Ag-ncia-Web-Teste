@@ -16,12 +16,13 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-.textos ul {
+.textos--navegação ul {
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-direction: row;
     align-items: center;
+    list-style-type: none;
 }
 
 header ul {
@@ -29,10 +30,11 @@ header ul {
     border: solid black;
 }
 
-.imagem {
+.cabeçalho__logo {
     display: flex;
     justify-content: center;
     height: 30vh;
+
 }
 
 img {
@@ -66,7 +68,7 @@ img {
     font-weight: bold;
 }
 
-.serviços{
+.seção--serviços{
 
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
