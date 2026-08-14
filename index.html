@@ -11,58 +11,65 @@
 <body>
     <header>
         <div class="imagem">
-            <img src="Logotipo Agência Web.png" alt="Logo da Agência Web">
+            <img src="Logotipo Agência Web.png" alt="Logo da Agência Web"
+            srcset="Logotipo Agência Web_pequena.png 1099w, 
+            Logotipo Agência Web_media.png 1500w,
+            Logotipo Agência Web.png 2000w"
+            sizes="(max-width: 600px) 150px, 300px">
+
         </div>
         <nav>
             <div class="textos">
                 <ul style="list-style-type: none;">
-                    <li>Home</li>
-                    <li>Sobre Nós</li>
-                    <li>Serviços</li>
-                    <li>Depoimentos</li>
-                    <li>Contato</li>
+                    <li class="textos__item"><a class = "textos__link" href="#home">Home</a></li>
+                    <li class="textos__item"><a class = "textos__link" href="#sobre-nos">Sobre Nós</a></li>
+                    <li class="textos__item"><a class = "textos__link" href="#serviços">Serviços</a></li>
+                    <li class="textos__item"><a class = "textos__link" href="#depoimentos">Depoimentos</a></li>
+                    <li class="textos__item"><a class = "textos__link" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <div class="pagina">
-            <section>
+            <section class="home">
                 <h2>Home</h2>
                 <p>Boas Vindas ao nosso site! Somos uma agência focada em desenvolvimento web de sites bem organizados e
                     criativos!</p>
             </section>
         </div>
         <div class="pagina">
-            <section>
+            <section class="sobre-nos">
                 <h2>Sobre Nós</h2>
                 <p>Nossa agência trabalha com web design e desenvolvimento web.</p>
+                <div class="sobre-nos__valores">
                 <ul>
-                    <li style="list-style-type: none;">Valores: </li>
-                    <li>Design de Site: R$300,00</li>
-                    <li>Rebranding de Site Preexistente: R$100,00</li>
-                    <li>Desenvolvimento Web de Site: R$500,00</li>
+                    <li class="sobre-nos__item--negrito">Valores: </li>
+                    <li class="sobre-nos__item">Design de Site: R$300,00</li>
+                    <li class="sobre-nos__item">Rebranding de Site Preexistente: R$100,00</li>
+                    <li class="sobre-nos__item">Desenvolvimento Web de Site: R$500,00</li>
                 </ul>
+                </div>
             </section>
         </div>
-        <div class="pagina-serviços">
-                <section>
-                    <header>
+        <div class="pagina">
+                <section class="serviços">
+                    <header class="serviços__cabecalho">
                     <h2>Serviços</h2>
                     <p>Os nossos serviços incluem: </p>
                     </header>
-                    <main>
+                    <div class="servicos__conteudo">
                     <ul>
-                        <li>Design para Logo</li>
-                        <li>Design para Site Completo</li>
-                        <li>Desenvolvimento de Site Completo</li>
-                        <li>Rebranding de Site Preexistente</li>
+                        <li servicos__item>Design para Logo</li>
+                        <li servicos__item>Design para Site Completo</li>
+                        <li servicos__item>Desenvolvimento de Site Completo</li>
+                        <li servicos__item>Rebranding de Site Preexistente</li>
                     </ul>
-                    </main>
+                    </div>
                 </section>
         </div>
         <div class="pagina">
-            <section>
+            <section class="depoimentos">
                 <h2>Depoimentos</h2>
                 <p>João Figueiredo: Empresa sensacional! Reformulou meu site em apenas poucos dias e a clientela subiu!
                 </p>
@@ -71,9 +78,9 @@
             </section>
         </div>
         <div class="pagina">
-            <section>
+            <section class="contato">
                 <h2>Contato</h2>
-                <form>
+                <form class="fomulario__contato">
                     <label for="endereço">Endereço: </label>
                     <input type="text" id="endereço" name="endereço" required>
 

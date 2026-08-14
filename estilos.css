@@ -10,6 +10,12 @@ main {
 body{
     background-color: #38b6ff;
 }
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 .textos ul {
     display: flex;
     justify-content: center;
@@ -37,7 +43,7 @@ img {
     display: flex;
     justify-content: center;
     margin: 1%;
-    text-align: center;
+    text-align: center
 }
 
 .pagina section{
@@ -49,34 +55,69 @@ img {
     background-color: #1c90d3;
 }
 
-.pagina-serviços {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main";
-    place-items: center;
+.sobre-nos__valores{
+    width: 95%;
+    display: flex;
+    text-align: left;
+    padding: 1rem;
 }
 
-.pagina-serviços section{
+.sobre-nos__item--negrito{
+    font-weight: bold;
+}
+
+.serviços{
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "cabeçalho"
+        "conteudo";
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid black;
+    border: solid black;    
     background-color: #1c90d3;
 }
 
-.pagina-serviços header{
-    grid-area: header;
+.serviços__cabecalho {
+    grid-area: cabecalho;
     text-align: center;
     background-color: #1c90d3;
 }
 
-.pagina section form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 1%;
+.servicos__conteudo {
+    grid-area: conteudo;
+    text-align: left;
+    padding: 1rem;
 }
+
+@media (max-width: 600px) {
+    body{
+        font-size: 1.50rem;
+    }
+
+    .servicos{
+        width: 100%;
+    }
+
+    img{
+        width: 40%
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body{
+    font-size: 1.25rem;}
+
+    .pagina section {
+        width: 60%;
+    }
+
+    .pagina-serviços section {
+        width: 60%;
+    }
+
+    img{
+        width: 35%
+    }
+}
+
