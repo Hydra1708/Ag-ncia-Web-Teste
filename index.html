@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Agência Criativa Web</title>
 </head>
 
 <body>
-    <header class="cabeçalho">
-        <div class="cabeçalho__logo">
-            <img src="Logotipo Agência Web.png" alt="Logo da Agência Web"
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <img class="cabecalho__logo__imagem" src="Logotipo Agência Web.png" alt="Logo da Agência Web"
             srcset="Logotipo Agência Web_pequena.png 1099w, 
             Logotipo Agência Web_media.png 1500w,
             Logotipo Agência Web.png 2000w"
@@ -19,8 +19,8 @@
 
         </div>
         <nav>
-            <div class="textos--navegação">
-                <ul class="textos--navegação__itens">
+            <div class="cabecalho__navegacao">
+                <ul class="cabecalho__navegacao__itens">
                     <li class="textos__item"><a class = "textos__link" href="#home">Home</a></li>
                     <li class="textos__item"><a class = "textos__link" href="#sobre-nos">Sobre Nós</a></li>
                     <li class="textos__item"><a class = "textos__link" href="#serviços">Serviços</a></li>
@@ -30,7 +30,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="layout">
         <div class="pagina">
             <section class="pagina__seção">
                 <h2>Home</h2>
@@ -42,23 +42,23 @@
             <section class="pagina__seção">
                 <h2>Sobre Nós</h2>
                 <p>Nossa agência trabalha com web design e desenvolvimento web.</p>
-                <div class="sobre-nos__valores">
+                <div class="seção__sobre-nos__valores">
                 <ul>
-                    <li class="sobre-nos__item--negrito">Valores: </li>
-                    <li class="sobre-nos__item">Design de Site: R$300,00</li>
-                    <li class="sobre-nos__item">Rebranding de Site Preexistente: R$100,00</li>
-                    <li class="sobre-nos__item">Desenvolvimento Web de Site: R$500,00</li>
+                    <li class="seção__sobre-nos__item--negrito">Valores: </li>
+                    <li class="seção__sobre-nos__item">Design de Site: R$300,00</li>
+                    <li class="seção__sobre-nos__item">Rebranding de Site Preexistente: R$100,00</li>
+                    <li class="seção__sobre-nos__item">Desenvolvimento Web de Site: R$500,00</li>
                 </ul>
                 </div>
             </section>
         </div>
         <div class="pagina">
                 <section class="pagina__seção--serviços">
-                    <header class="serviços__cabecalho">
+                    <header class="seção__serviços__cabecalho">
                     <h2>Serviços</h2>
                     <p>Os nossos serviços incluem: </p>
                     </header>
-                    <div class="servicos__conteudo">
+                    <div class="seção__serviços__conteudo">
                     <ul>
                         <li servicos__item>Design para Logo</li>
                         <li servicos__item>Design para Site Completo</li>

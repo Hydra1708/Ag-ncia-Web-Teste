@@ -1,0 +1,38 @@
+@use 'variaveis';
+@use 'mixins';
+
+body{
+    background-color: variaveis.$cor-primaria;
+}
+
+@media (max-width: 600px) {
+    body{
+        font-size: variaveis.$fonte-telas-pequenas;
+    }
+
+    .pagina__seção--serviços{
+        @include mixins.largura-padrao;
+    }
+
+    .cabecalho__logo__imagem{
+        @include mixins.largura-telas-pequenas;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body{
+    font-size: variaveis.$fonte-telas-medias;}
+
+    .pagina__seção {
+       @include mixins.largura-telas-medias;
+    }
+
+    .pagina__seção--serviços {
+        @include mixins.largura-telas-medias;
+    }
+
+    img{
+       @include mixins.largura-telas-pequenas;
+    }
+}
+

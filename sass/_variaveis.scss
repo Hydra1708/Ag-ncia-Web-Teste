@@ -1,6 +1,20 @@
+@use "sass:math";
 
 $cor-primaria: #38b6ff;
 $cor-secundaria: #1c90d3;
+
 $largura-padrao: 100%;
-$largura-um-quarto: 20%;
+$largura-metade: calc($largura-padrao / 2);
+$largura-um-quinto: calc($largura-padrao / 5);
+$largura-telas-pequenas: 40%;
+$largura-telas-medias: calc($largura-telas-pequenas * 1.5);
 $altura-logo: 30vh;
+$margem-padrao: 1%;
+$fonte-telas-pequenas: 1.50rem;
+$fonte-telas-medias: calc($fonte-telas-pequenas / 1.25);
+$espacamento-padrao: 10px;
+$padding-padrao: 1rem;
+
+$borda-escura: solid black;
+$display-padrao: flex;
+

@@ -2,11 +2,28 @@
 @use 'mixins';
 
 .cabecalho {
-    background-color: $cor-primaria;
+    background-color: variaveis.$cor-primaria;
     @include mixins.largura-padrao;
     &__logo{
-        display: flex;
+        display: variaveis.$display-padrao;
         justify-content: center;
+        height: variaveis.$altura-logo;
     }
+
+    &__logo__imagem{
+        @include mixins.largura-um-quinto;
+    }
+
+    &__navegacao__itens{
+        display: variaveis.$display-padrao;        
+        justify-content: center;
+        @include mixins.espacamento-padrao;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        background-color: variaveis.$cor-secundaria;
+        @include mixins.borda-escura;
+    }
+    
 
 }

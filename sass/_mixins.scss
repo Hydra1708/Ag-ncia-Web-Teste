@@ -4,6 +4,26 @@
     width: variaveis.$largura-padrao;
 }
 
-@mixin largura-um-quarto {
-    width: variaveis.$largura-um-quarto;
+@mixin largura-metade {
+    width: variaveis.$largura-metade;
+}
+
+@mixin largura-um-quinto {
+    width: variaveis.$largura-um-quinto;
+}
+
+@mixin largura-telas-pequenas {
+    width: variaveis.$largura-telas-pequenas;
+}
+
+@mixin largura-telas-medias {
+    width: variaveis.$largura-telas-medias;
+}
+
+@mixin borda-escura {
+    border: variaveis.$borda-escura;
+}
+
+@mixin espacamento-padrao{
+    gap: variaveis.$espacamento-padrao;
 }

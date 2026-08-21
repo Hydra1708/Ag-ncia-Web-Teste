@@ -1,0 +1,64 @@
+@use 'variaveis';
+@use 'mixins';
+
+
+
+.layout {
+    grid-area: main;
+    text-align: center;
+}
+
+.pagina {
+    display: variaveis.$display-padrao;
+    justify-content: center;
+    margin: variaveis.$margem-padrao;
+    text-align: center;
+
+    &__seção{
+    @include mixins.largura-metade;
+    display: variaveis.$display-padrao;
+    flex-direction: column;
+    align-items: center;
+    @include mixins.borda-escura;
+    background-color: variaveis.$cor-secundaria;
+    }
+
+    &__seção--serviços{
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "cabeçalho"
+        "conteudo";
+    @include mixins.largura-metade;
+    @include mixins.borda-escura;
+    background-color: variaveis.$cor-secundaria;
+    }
+}
+
+.seção {
+
+    &__sobre-nos__valores {
+    
+    @include mixins.largura-padrao;
+    display: variaveis.$display-padrao;
+    text-align: left;
+    padding: variaveis.$padding-padrao;
+    }
+
+    &__sobre-nos__item--negrito{
+        font-weight: bold;
+    }
+
+    &__serviços__cabecalho{
+        grid-area: cabecalho;
+        text-align: center;
+        background-color: variaveis.$cor-secundaria;
+    }
+
+     &__serviços__conteudo{
+        grid-area: conteudo;
+        text-align: left;
+        padding: variaveis.$padding-padrao;
+     }
+}
