@@ -1,0 +1,9 @@
+@use 'variaveis';
+
+@mixin largura-padrao {
+    width: variaveis.$largura-padrao;
+}
+
+@mixin largura-um-quarto {
+    width: variaveis.$largura-um-quarto;
+}

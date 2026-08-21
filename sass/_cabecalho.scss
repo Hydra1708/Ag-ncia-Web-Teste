@@ -1,0 +1,12 @@
+@use 'variaveis';
+@use 'mixins';
+
+.cabecalho {
+    background-color: $cor-primaria;
+    @include mixins.largura-padrao;
+    &__logo{
+        display: flex;
+        justify-content: center;
+    }
+
+}
